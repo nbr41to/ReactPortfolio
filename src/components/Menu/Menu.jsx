@@ -12,7 +12,7 @@ const Menu = () => {
   return (
     <StyledComponent>
       <nav>
-        <ul onTouchStart="">
+        <ul>
           <h2>― <strong>MENU</strong> ―</h2>
           <li>
             <Link to="/" className={selectedIndex === 0 ? "active" : ""} onClick={(event) => handleListItemClick(event, 0)}>

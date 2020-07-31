@@ -6,7 +6,7 @@ export const StyledComponent = styled.header`
     display: flex;
     justify-content:flex-start;
     align-items:center;
-    background-color: ${colors.cream};
+    /* background-color: ${colors.cream}; */
     padding:2rem;
     img {
       width:80px;
@@ -30,7 +30,7 @@ export const StyledComponent = styled.header`
       img {
         width:50px;
         height:50px;
-        margin-left: 2rem;
+        margin: 0.5rem 1.5rem;
       }
     }
   `;

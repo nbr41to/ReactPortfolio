@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 import { StyledComponent } from "./Header.styled"
 import site_logo from "./logo_circle.png"
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
   <StyledComponent className="header item">
     <Link to="/"><img src={site_logo} alt="site_logo"/></Link>
     <h1>Knob's Portfolio</h1>

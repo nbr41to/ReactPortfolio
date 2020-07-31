@@ -17,15 +17,15 @@ export const StyledComponent = styled.div`
       }
       li {
         width: 100%;
-        margin:10px 0;
       }
       a {
+        margin:10px 0;
         display: flex;
         align-items:center;
         font-size:2.4rem;
         .icon {
           font-size:3.5rem;
-          margin-right:10px;
+          margin: 0 1rem;
         }
         &:hover {
           color: ${colors.cream};
@@ -40,7 +40,8 @@ export const StyledComponent = styled.div`
     }
     ${mq} {
       ul {
-        /* display: flex; */
+        height: 55px;
+        background-color: palegreen;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
@@ -50,17 +51,23 @@ export const StyledComponent = styled.div`
         }
         .icon {
           font-size:4rem;
-          margin:0 2rem;
+          margin:0 ;
         }
         span {
           display: none;
         }
         /* タッチエフェクトを付けたい */
-        &:active {
-          /* background-color: blue; */
-          color: ${colors.cream};
-          text-decoration: underline;
-          transition-duration:0;
+        li {
+          margin: 0;
+          a {
+            display: flex;
+            justify-content:center;
+            align-items:center;
+          }
+          &:active {
+           background-color: green;
+           opacity: 0.2;
+          }
         }
       }
     }

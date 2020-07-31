@@ -24,4 +24,26 @@ export const StyledComponent = styled.main`
         padding: 0.5rem;
       }
     }
+
+    /* 
+      CONTACT PAGE 
+    */
+    .sns_list {
+      h2 {
+        font-size: 2.4rem;
+      }
+      li {
+        font-size: 2rem;
+        margin: 1.2rem;
+        &:hover {
+          color: ${colors.blue};
+          ::before {
+            content: '＊';
+            color:${colors.orange};
+          }
+        }
+
+      }
+
+    }
 `;
