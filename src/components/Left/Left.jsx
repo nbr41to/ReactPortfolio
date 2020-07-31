@@ -1,5 +1,5 @@
-import { Link } from "gatsby"
-import React from "react"
+import React from "react";
+import { Link } from "react-router-dom";
 import { StyledComponent } from "./Left.styled"
 import Menu from "../Menu"
 
