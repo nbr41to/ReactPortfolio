@@ -4,7 +4,7 @@ import Layout from '../components/Layout'
 
 export default function Contact() {
     return (
-        <Layout>
+        <>
             <h1>Contact</h1>
             <ul className="sns_list">
                 <h2>SNS</h2>
@@ -16,6 +16,6 @@ export default function Contact() {
                 <li><a href="https://github.com/nbr41to">GitHub</a></li>
                 <li><a href="https://www.linkedin.com/in/knob/">Linkdin</a></li>
             </ul>
-        </Layout>
+        </>
     );
 }

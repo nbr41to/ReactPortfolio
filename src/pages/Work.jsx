@@ -1,10 +1,12 @@
 import React from 'react';
 import Layout from '../components/Layout'
 
-export default function Work () {
+export default function Work() {
     return (
-        <Layout>
+        <>
             <h1>Work</h1>
-        </Layout>
+            <p>仕事のほどんどは,PC,iPad,iPhoneで行っております.</p>
+
+        </>
     );
 }

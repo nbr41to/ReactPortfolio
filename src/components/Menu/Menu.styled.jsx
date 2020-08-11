@@ -32,9 +32,11 @@ export const StyledComponent = styled.div`
           text-decoration: underline;
           transition-duration:0.3s;
         }
-        .active {
-          color: ${colors.cream};
-        }
+      }
+      .active {
+        color: ${colors.cream};
+        font-weight: bold;        
+        filter: drop-shadow(1.5px 1.5px 0.5px rgba(0,0,0,0.6));
       }
 
     }
@@ -56,7 +58,6 @@ export const StyledComponent = styled.div`
         span {
           display: none;
         }
-        /* タッチエフェクトを付けたい */
         li {
           margin: 0;
           a {
