@@ -13,6 +13,7 @@ export const StyledComponent = styled.div`
     /* ここのMarginはLayoutで0に設定されているとき上書きできない */
     ${mq} {
       width: 100%;
+      height: 5.5rem;
       position: fixed;
       bottom: 0;
       left: 0;
