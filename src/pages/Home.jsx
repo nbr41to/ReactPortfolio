@@ -1,28 +1,15 @@
 import React from 'react';
-import Layout from '../components/Layout'
+import Section from '../components/Section'
+import { sections } from '../contents'
 
 export default function Home() {
     return (
-        <>
-            <div>
-                <img />
+        <div className="home">
+            <div className="catch">
+                <h2>人生は何度でもやり直せる</h2>
+                <p>Reborn to Next Stage</p>
             </div>
-            <section>
-                <h2>DESCRIPTION</h2>
-                <p>ここは,僕の作るポートフォリオサイトです.今は,純正のReactで作っています.自身とともに成長します.また,自己紹介用のサイトとしても運用しています.ゆっくりしていってください！</p>
-            </section>
-            <section>
-                <h2>成長記録</h2>
-                <p></p>
-                <ul>
-                    <li>数学</li>
-                    <li>プログラミング</li>
-                    <li>心理学</li>
-                    <li>ルービックキューブ</li>
-                    <li>ダンス</li>
-                </ul>
-            </section>
-
-        </>
+            {sections.home.map((section) => <Section section={section} />)}
+        </div>
     );
 }

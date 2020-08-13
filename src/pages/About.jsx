@@ -1,25 +1,12 @@
 import React from 'react';
-import Layout from '../components/Layout'
+import Section from '../components/Section'
+import { sections } from '../contents'
 
 export default function About() {
     return (
-        <>
+        <div className="about">
             <h1>About</h1>
-            <h2>Profile</h2>
-            <p></p>
-            <section>
-                <h2>CONTEXT</h2>
-                <p>決めてはこれでした.決めてはこれでした.決めてはこれでした.決めてはこれでした.決めてはこれでした.決めてはこれでした.決めてはこれでした.決めてはこれでした.決めてはこれでした.決めてはこれでした.決めてはこれでした.決めてはこれでした.決めてはこれでした.決めてはこれでした.</p>
-            </section>
-            <section>
-                <h2>CONCEPT</h2>
-                <p>決めてはこれでした.決めてはこれでした.決めてはこれでした.決めてはこれでした.決めてはこれでした.決めてはこれでした.決めてはこれでした.決めてはこれでした.決めてはこれでした.決めてはこれでした.決めてはこれでした.決めてはこれでした.決めてはこれでした.決めてはこれでした.</p>
-            </section>
-            <section>
-                <h2>COMMIT</h2>
-                <p>決めてはこれでした.決めてはこれでした.決めてはこれでした.決めてはこれでした.決めてはこれでした.決めてはこれでした.決めてはこれでした.決めてはこれでした.決めてはこれでした.決めてはこれでした.決めてはこれでした.決めてはこれでした.決めてはこれでした.決めてはこれでした.</p>
-            </section>
-
-        </>
+            {sections.about.map((section) => <Section section={section} />)}
+        </div>
     );
 }

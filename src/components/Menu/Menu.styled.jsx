@@ -42,7 +42,8 @@ export const StyledComponent = styled.div`
     }
     ${mq} {
       ul {
-        height: 55px;
+        /* height: 55px; */
+        height: 5.5rem;
         background-color: palegreen;
         flex-direction: row;
         justify-content: space-between;
