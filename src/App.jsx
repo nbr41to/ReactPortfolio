@@ -21,7 +21,7 @@ import Cube from './pages/growth-record/Cube';
 
 export default function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <ScrollToTop />
       <Layout>
         <Switch>
@@ -35,7 +35,7 @@ export default function App() {
           <Route exact path="/growth-record/cube" component={Cube} />
         </Switch>
       </Layout>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
