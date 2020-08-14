@@ -1,6 +1,7 @@
 import React from 'react';
 import {
   BrowserRouter,
+  HashRouter,
   Route,
   Switch,
   Link,
@@ -20,7 +21,7 @@ import Cube from './pages/growth-record/Cube';
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <ScrollToTop />
       <Layout>
         <Switch>
@@ -34,7 +35,7 @@ export default function App() {
           <Route exact path="/growth-record/cube" component={Cube} />
         </Switch>
       </Layout>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
