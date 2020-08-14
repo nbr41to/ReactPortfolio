@@ -1,7 +1,6 @@
 import React, { useState } from "react"
 import { Link } from "react-router-dom"
 import { StyledComponent } from "./Menu.styled"
-import { Home, Face, BusinessCenter, MailOutline, LaptopChromebook } from '@material-ui/icons';
 import { menu } from '../../contents.js'
 
 const Menu = () => {

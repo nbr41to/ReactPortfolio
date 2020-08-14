@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors } from "../../styles/theme"
+// import { colors } from "../../styles/theme"
 import home_catch from '../../images/home_catch.jpg';
 
 const mq = "@media (max-width:600px)";
