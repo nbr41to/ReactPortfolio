@@ -9,7 +9,6 @@ export default function Home() {
                 <h2>人生は何度でもやり直せる</h2>
                 <p>Reborn to Next Stage</p>
             </div>
-            <p>コメントです！編集しました！</p>
             {sections.home.map((section) => <Section section={section} />)}
         </div>
     );
