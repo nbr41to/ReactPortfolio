@@ -3,13 +3,12 @@ import { colors } from "../../styles/theme"
 
 const mq = "@media (max-width:600px)";
 export const StyledComponent = styled.div`
-    height: 100vh;
     display:grid;
     grid-template:
     "... ...... ...... ...... ...... ...... ..." 0
     "... header header header header header ..." 10rem
     "... ...... ...... ...... ...... ...... ..." 0
-    "... left   ...... main   main   main   ..." auto
+    "... left   ...... main   main   main   ..." minmax(100vh, 1fr)
     "... ...... ...... ...... ...... ...... ..." 0
     "... footer footer footer footer footer ..." 5rem
     "... ...... ...... ...... ...... ...... ..." 0 /
@@ -38,10 +37,10 @@ export const StyledComponent = styled.div`
       "...... ...... ...... ...... ......" 0
       "header header header header header" auto
       "...... ...... ...... ...... ......" 0
-      "main   main   main   main   main  " 100vh
+      "main   main   main   main   main  " minmax(100vh, 1fr)
       "...... ...... ...... ...... ......" 0
       "footer footer footer footer footer" auto
-      "left   left   left   left   left  " 55.5rem
+      "left   left   left   left   left  " auto
       "...... ...... ...... ...... ......" 0 /
         0      auto   0      auto   auto;
       .footer {

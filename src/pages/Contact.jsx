@@ -6,7 +6,7 @@ export default function Contact() {
     return (
         <div className="contact">
             <h1>Contact</h1>
-            {sections.contact.map((section) => <Section section={section} />)}
+            {sections.contact.map((section, index) => <Section section={section} key={index} />)}
         </div>
     );
 }

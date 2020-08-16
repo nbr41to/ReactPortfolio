@@ -2,7 +2,7 @@ import React from "react"
 import { StyledComponent } from "./Section.styled"
 
 const Section = ({ section }) => {
-    console.log(section.list)
+    // console.log(section.list)
     const List = ({ section }) => {
         if (section.list.length === 0) {
             return <></>
@@ -10,7 +10,7 @@ const Section = ({ section }) => {
             return (
                 <ul>
                     {(section.listTitle) ? <h3>{section.listTitle}</h3> : <></>}
-                    {section.list.map((item) => <li>{item}</li>)}
+                    {section.list.map((item, index) => <li key={index}>{item}</li>)}
                 </ul>
             )
         }

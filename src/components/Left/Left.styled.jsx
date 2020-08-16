@@ -17,6 +17,7 @@ export const StyledComponent = styled.div`
       position: fixed;
       bottom: 0;
       left: 0;
+      z-index: 10;
       border-radius: 0px;
       padding: 0;
       margin: 0;

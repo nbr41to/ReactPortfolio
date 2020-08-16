@@ -5,8 +5,8 @@ import { sections } from '../contents'
 export default function Work() {
     return (
         <div className="work">
-            <h1>Work</h1>
-            {sections.work.map((section) => <Section section={section} />)}
+            <h1>Bussiness</h1>
+            {sections.work.map((section, index) => <Section section={section} key={index} />)}
         </div>
     );
 }

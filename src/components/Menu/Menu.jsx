@@ -18,7 +18,7 @@ const Menu = () => {
           {menu.map((list, index) => {
             const path = `/${list.path}`
             return (
-              <li className={activeIndex === index ? 'active' : ''}>
+              <li className={activeIndex === index ? 'active' : ''} key={index}>
                 <Link to={path} onClick={() => { activeChange(index) }}>
                   {list.icon}
                   <span>{list.title}</span>
