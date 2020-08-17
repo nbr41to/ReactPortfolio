@@ -4,29 +4,34 @@ import {
     Link,
     Redirect,
 } from 'react-router-dom';
-import { Home, Face, MailOutline, LaptopChromebook, Twitter } from '@material-ui/icons';
+import { Home, Face, MailOutline, LaptopChromebook, Twitter, MenuBook } from '@material-ui/icons';
 // iconはここでインポートしておく
 
 export const menu = [
     {
-        title: 'HOME',
+        title: 'Home',
         icon: < Home className="icon" />,
         path: "",
     },
     {
-        title: 'ABOUT',
+        title: 'About',
         icon: <Face className="icon" />,
         path: "about",
     },
     {
-        title: 'WORK',
+        title: 'Bussiness',
         icon: <LaptopChromebook className="icon" />,
-        path: "work",
+        path: "bussiness",
     },
     {
-        title: 'CONTACT',
+        title: 'Contact',
         icon: <MailOutline className="icon" />,
         path: "contact",
+    },
+    {
+        title: 'Docs',
+        icon: <MenuBook className="icon" />,
+        path: "documents",
     },
 ]
 
@@ -77,9 +82,9 @@ export const sections = {
 
     ],
     // ======
-    //  WORK
+    //  BUSSINESS
     // ======
-    work: [
+    bussiness: [
         {
             title: "Technology × Psychology",
             text1: "ITと心理学を使って,多くの人が幸せに暮せる方法を追求しております.できるがありましたら,CONTACTから気軽に連絡ください.",

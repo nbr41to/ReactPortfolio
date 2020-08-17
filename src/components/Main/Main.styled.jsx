@@ -13,7 +13,7 @@ export const StyledComponent = styled.main`
         padding: 0;
       }
     h1 {
-        font-family: 'Arial Black';
+        font-family: Arial Black;
         font-size: 3.2rem;
         margin: 1rem 1.5rem;
       }
@@ -57,7 +57,6 @@ export const StyledComponent = styled.main`
         }
         h2 {
             text-align: left;
-            /* font-family: 'HiraKakuProN-W6'; */
             font-size: 2.6rem;
             letter-spacing: 0.2rem;
             margin-top:2rem;
@@ -65,7 +64,6 @@ export const StyledComponent = styled.main`
           }
           p {
             text-align: right;
-            /* font-family: 'cursive'; */
             font-family: 'Comic Sans MS';
             font-size: 2.4rem;
             margin-right:2rem;
