@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors } from "../../styles/theme"
+import { colors } from "../../../styles/theme"
 export const StyledComponent = styled.footer`
     display: flex;
     justify-content: center;
