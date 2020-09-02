@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import Header from "./Header"
 import Left from "./Left"
 import Right from "./Right"
@@ -11,12 +11,12 @@ import { StyledComponent } from "./Layout.styled"
 
 
 const Layout = ({ children }) => {
-
+  const [hamOpen, setHamOpen] = useState("aa")
   return (
-    <StyledComponent>
+    <StyledComponent hamOpen={hamOpen}>
       <GlobalStyle />
-      <Header />
-      <Left />
+      <Header hamOpen={hamOpen} setHamOpen={setHamOpen} />
+      <Left hamOpen={hamOpen} setHamOpen={setHamOpen} />
       <Right />
       <Main children={children} />
       <Footer />

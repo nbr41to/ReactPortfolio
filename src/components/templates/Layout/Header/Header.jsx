@@ -5,9 +5,7 @@ import lab_logo from "./lab_ttl_logo.png"
 import Menu from "../../Menu"
 import Burger from "../../Burger"
 
-const Header = () => {
-  const [hamOpen, setHamOpen] = useState(false)
-
+const Header = ({ hamOpen, setHamOpen }) => {
   return (
     <StyledComponent className="header item">
       {/* <h1>Knob's Portfolio</h1> */}

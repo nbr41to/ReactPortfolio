@@ -1,7 +1,6 @@
 import React from 'react';
 import Section from '../components/organisms/Section'
 import { home } from '../contents/home'
-import kakizome from '../images/2020kakizome.jpeg'
 import eyecatch from '../images/eyecatch.jpeg'
 
 export default function Home() {

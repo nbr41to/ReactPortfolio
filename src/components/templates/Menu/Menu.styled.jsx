@@ -13,7 +13,7 @@ export const StyledComponent = styled.nav`
     h2 {
       /* width: 100%; */
       color: #444;
-      font-size:1.0rem;
+      font-size:1.2rem;
       text-align:center;
       padding: 0.3rem;
     }
@@ -30,10 +30,10 @@ export const StyledComponent = styled.nav`
         flex-direction: column;
         justify-content: center;
         align-items:center;
-        font-size:1.2rem;
+        font-size:1.4rem;
         position: relative;
         .icon {
-          font-size: 2.5rem;
+          font-size: 3.0rem;
           margin: 0.5rem;
         }
         span {
@@ -57,7 +57,9 @@ export const StyledComponent = styled.nav`
         filter: drop-shadow(1.5px 1.5px 0.5px rgba(0,0,0,0.6));
       }   
     }
-
+    .subtitle {
+      display: none;
+    }
     /* Media Query */
   ${mq} {
     width: 100%;
@@ -112,6 +114,7 @@ export const StyledComponent = styled.nav`
       text-align: center;
       padding: 2rem 0 1rem;
     }
+    
     ul {
       display: flex;
       flex-direction: column;
@@ -120,7 +123,7 @@ export const StyledComponent = styled.nav`
       li {
         width: 100%;
         a {
-          margin:10px 0;
+          margin: 1rem 0;
           display: flex;
           align-items: center;
           font-size: 2.2rem;
@@ -130,7 +133,6 @@ export const StyledComponent = styled.nav`
           }
           &:hover {
             color: ${colors.cream};
-            text-decoration: underline;
             transition-duration:0.4s;
           }
         }
@@ -141,37 +143,63 @@ export const StyledComponent = styled.nav`
         filter: drop-shadow(1.5px 1.5px 0.5px rgba(0,0,0,0.6));
       }
     }
+    .subtitle {
+      display: none;
+    }
+    .subtitle_active{
+      display: flex;
+      width: 100%;
+      padding-right: 0;
+      li {
+        padding: 0 1rem;
+        /* margin-top: 0.5rem; */
+        border-bottom: 1px solid #ccc;
+        border-left: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+        /* border-bottom-left-radius: 0.5rem; */
+        a {
+          font-size: 1.6rem;
+          &:hover {
+            color: ${colors.blue};
+            text-decoration: underline;
+            transition-duration:0.4s;
+          }
+        }
+      }
+    }
         /* Media Query */
+        /* ようはハンバーガー用だよね */
     ${mq} {
+      display: flex;
+      flex-direction: column;
+      h2 {
+        font-size: 1.8rem;
+        padding: 3rem 0 2rem;
+      }
       ul {
-        /* height: 55px; */
-        height: 5.5rem;
-        background-color: palegreen;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0;
-        h2 {
-          display: none;
-        }
-        .icon {
-          font-size:4rem;
-          margin:0 ;
-        }
-        span {
-          display: none;
-        }
-        li {
-          margin: 0;
-          a {
-            display: flex;
-            justify-content:center;
-            align-items:center;
+      padding: 0 1rem 1.5rem;
+      li {
+        width: 100%;
+        a {
+          font-size: 2.0rem;
+          .icon {
+            font-size:2.2rem;
           }
-          &:active {
-           background-color: green;
-           opacity: 0.2;
+          &:hover {
+            color: navy;
           }
+        }
+      }
+      .active {
+        background-color: ${colors.cream};
+        color: navy;
+      }
+    }
+    .subtitle_active{
+      li {
+        background-color: ${colors.cream};
+        a {
+          font-size: 1.4rem;
         }
       }
     }

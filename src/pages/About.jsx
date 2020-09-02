@@ -5,15 +5,7 @@ import { about } from '../contents/about'
 import Section from '../components/organisms/Section'
 import ProfileBox from '../components/organisms/ProfileBox'
 
-export default function About() {
-    // const markdown_text = fetch(markdown).then((response) => response.text())
-    const [markdownText, setMarkdownText] = useState()
-    // console.log(markdownText);
-    useEffect(() => {
-        fetch(markdown).then((response) => response.text()).then((text) => {
-            setMarkdownText(text);
-        })
-    }, [])
+export default function About({ markdownText }) {
     return (
         <div className="about">
             <h1>About</h1>

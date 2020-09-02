@@ -5,7 +5,7 @@ export const StyledBurger = styled.button`
   ${mq} {
     display: none;
   }
-  position: absolute;
+  position: Fixed;
   top: 2.5rem;
   right: 2rem;
   display: flex;
