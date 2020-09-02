@@ -11,7 +11,7 @@ import { StyledComponent } from "./Layout.styled"
 
 
 const Layout = ({ children }) => {
-  const [hamOpen, setHamOpen] = useState("aa")
+  const [hamOpen, setHamOpen] = useState(false)
   return (
     <StyledComponent hamOpen={hamOpen}>
       <GlobalStyle />
