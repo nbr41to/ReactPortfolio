@@ -1,20 +1,16 @@
 import React from 'react';
-import Section from '../components/atoms/Section'
-import { sections } from '../contents'
+import Section from '../components/organisms/Section'
+import { home } from '../contents/home'
 import kakizome from '../images/2020kakizome.jpeg'
+import eyecatch from '../images/eyecatch.jpeg'
 
 export default function Home() {
     return (
         <div className="home">
             <div className="catch">
-                <h2>人生は何度でもやり直せる</h2>
-                <p>Reborn to Next Stage</p>
+                <img src={eyecatch} style={{ width: '100%' }} />
             </div>
-            {sections.home.map((section, index) => <Section section={section} key={index} />)}
-            <div className="container">
-                <h2>This year's goal</h2>
-                <img src={kakizome} />
-            </div>
+            {home.sections.map((section, index) => <Section section={section} key={index} />)}
         </div>
     );
 }

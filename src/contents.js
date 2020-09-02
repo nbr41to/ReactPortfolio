@@ -30,9 +30,9 @@ export const menu = [
         path: "about",
     },
     {
-        title: 'Bussiness',
+        title: 'Business',
         icon: <LaptopChromebook className="icon" />,
-        path: "bussiness",
+        path: "Business",
     },
     {
         title: 'Contact',
@@ -93,9 +93,9 @@ export const sections = {
 
     ],
     // ======
-    //  BUSSINESS
+    //  Business
     // ======
-    bussiness: [
+    Business: [
         {
             title: "Technology × Psychology",
             text1: "ITと心理学を使って,多くの人が幸せに暮せる方法を追求しております.できるがありましたら,CONTACTから気軽に連絡ください.",

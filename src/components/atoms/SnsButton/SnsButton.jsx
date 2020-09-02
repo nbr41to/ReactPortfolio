@@ -1,13 +1,12 @@
 import React from "react"
 import { StyledComponent } from "./SnsButton.styled"
 
-export default ({ title, icon, url }) => {
+
+export default ({ icon, url }) => {
     return (
         <StyledComponent>
-            <button>
-                <h2>{title}</h2>
-
-            </button>
+            <>
+            </>
         </StyledComponent>
     )
 }
