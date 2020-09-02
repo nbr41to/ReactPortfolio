@@ -6,7 +6,7 @@ const mq = "@media (max-width:600px)";
 export const StyledComponent = styled.main`
     /* 共通 */
     h1 {
-        font-family: Arial Black;
+        font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
         font-size: 3.2rem;
         margin: 1rem 1.5rem;
       }
