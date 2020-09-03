@@ -38,7 +38,7 @@ export const home = {
             text2: "",
             listTitle: "",
             list: [
-                "駆け出しプログラマー [JavaScript, React, React Native, TypeScript, Gatsby, GraphQL, Storybook]",
+                "駆け出しプログラマー [JavaScript, React, React Native, TypeScript, Next.js, Gatsby.js, GraphQL, Storybook]",
                 "第4回 公認心理師 資格認定試験",
                 <a href="https://www.youtube.com/channel/UCMbCS3ynaSuLJGMX512v-lQ">数学支援 [nobmath]</a>,
                 "ダンスの練習",

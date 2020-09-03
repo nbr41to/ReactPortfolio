@@ -27,7 +27,7 @@ export const documents = {
         {
             wide: "",
             title: "Discription",
-            text1: "ここには,",
+            text1: "このページでは,僕の作ったアプリやエッセイの紹介をしています！",
             text2: "",
             discription: "",
             listTitle: "",
@@ -35,17 +35,34 @@ export const documents = {
             ],
             image: "",
         },
+        // {
+        //     title: "Growth record",
+        //     text1: "",
+        //     text2: "",
+        //     listTitle: "",
+        //     list: [
+        //         <Link to="/growth-record/math/">数学</Link>,
+        //         <Link to="/growth-record/prog">プログラミング</Link>,
+        //         <Link to="/growth-record/psyc">心理学</Link>,
+        //         <Link to="/growth-record/cube">ルービックキューブ</Link>,
+        //     ]
+        // },
         {
-            title: "Growth record",
-            text1: "",
-            text2: "",
-            listTitle: "",
+            wide: "",
+            title: "React todo app",
+            text1: "概要：運動の記録シェアする意識高いアプリのデモ（本番用は現在開発中...）",
+            text2: "コメント：今回は",
+            discription: <a href="https://nbr41to.github.io/exercise_app_lite/">https://nbr41to.github.io/exercise_app_lite/</a>,
+            listTitle: "機能や技術などの概要",
             list: [
-                <Link to="/growth-record/math/">数学</Link>,
-                <Link to="/growth-record/prog">プログラミング</Link>,
-                <Link to="/growth-record/psyc">心理学</Link>,
-                <Link to="/growth-record/cube">ルービックキューブ</Link>,
-            ]
+                "4人の仮ユーザでのログイン",
+                "マイプロフィールの編集（名前のみ）",
+                "マイエクササイズの編集",
+                "マイエクササイズから選択してコメント付けて投稿",
+                "react,firebase",
+            ],
+            image: "",
+            movie: "",
         },
         {
             wide: "",
