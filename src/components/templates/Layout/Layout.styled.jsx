@@ -62,7 +62,7 @@ export const StyledComponent = styled.div`
         background-color: ${colors.blue};
         border-bottom-left-radius: 1rem;
         opacity: 0.9;
-        transition: transform .8s;
+        transition: transform .3s;
       }
     }
   `;
