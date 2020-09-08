@@ -171,6 +171,7 @@ export const StyledComponent = styled.nav`
     ${mq} {
       display: flex;
       flex-direction: column;
+      z-index: 7;
       h2 {
         font-size: 1.8rem;
         padding: 3rem 0 2rem;

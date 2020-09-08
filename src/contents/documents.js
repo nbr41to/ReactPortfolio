@@ -48,28 +48,47 @@ export const documents = {
         //     ]
         // },
         {
-            wide: "",
+            wide: true,
             title: "React todo app",
-            text1: "概要：運動の記録シェアする意識高いアプリのデモ（本番用は現在開発中...）",
-            text2: "コメント：今回は",
-            discription: <a href="https://nbr41to.github.io/exercise_app_lite/">https://nbr41to.github.io/exercise_app_lite/</a>,
+            text1: "概要：Reactを学んで初めて作ったWebアプリです.同時にUI-ライブラリの存在を知り感動したので,Material-uiも初めて使ってみました！",
+            text2: "UI-ライブラリを使用すると,素人でも見た目がいい感じになることがわかった.",
+            discription: "動作動画 by YouTube",
             listTitle: "機能や技術などの概要",
             list: [
-                "4人の仮ユーザでのログイン",
-                "マイプロフィールの編集（名前のみ）",
-                "マイエクササイズの編集",
-                "マイエクササイズから選択してコメント付けて投稿",
-                "react,firebase",
+                "useStateを使ったTodoの保存と削除",
+                "mapメソッドによるJSXの繰り返し",
+                "short-idを使って,Todoにidを振り分け,",
+                "Material-uiのスタイリングの練習",
+                <a href="https://nbr41to.github.io/react-first-app/">PreviewSite</a>,
+                <a href="https://github.com/nbr41to/react-first-app/">SourceCode</a>,
             ],
             image: "",
-            movie: "",
+            movie: "https://www.youtube.com/embed/qDre2qHap2A",
         },
         {
-            wide: "",
+            wide: true,
+            title: "React chat app",
+            text1: "概要：Reactで作った2つ目の作品です.ずっと作りたかったリアルタイムチャットアプリです.",
+            text2: "デザインの重要性を知りました.（デザイン性を重視したリアルタイムチャットはnobmath appで実装しました）",
+            discription: "動作動画 by YouTube",
+            listTitle: "機能や技術などの概要",
+            list: [
+                "Firebaseを使ったユーザ管理",
+                "React RouterとuseEffectとuseContextを使ったログイン認証機能",
+                "Firestoreを使ったリアルタイムでのメッセージデータ通信",
+                "short-idを使ってゲストログイン機能を後から実装",
+                <a href="https://nbr41to.github.io/react-second-app/">PreviewSite</a>,
+                <a href="https://github.com/nbr41to/react-second-app/">SourceCode</a>,
+            ],
+            image: "",
+            movie: "https://www.youtube.com/embed/yGBBDm893cU",
+        },
+        {
+            wide: true,
             title: "Exercise share app DEMO",
             text1: "概要：運動の記録シェアする意識高いアプリのデモ（本番用は現在開発中...）",
             text2: "コメント：今回は",
-            discription: <a href="https://nbr41to.github.io/exercise_app_lite/">https://nbr41to.github.io/exercise_app_lite/</a>,
+            discription: "動作動画 by YouTube",
             listTitle: "機能や技術などの概要",
             list: [
                 "4人の仮ユーザでのログイン",
@@ -77,9 +96,11 @@ export const documents = {
                 "マイエクササイズの編集",
                 "マイエクササイズから選択してコメント付けて投稿",
                 "react,firebase",
+                <a href="https://nbr41to.github.io/exercise_app_lite/">PreviewSite</a>,
+                <a href="https://github.com/nbr41to/exercise_app_lite">SourceCode</a>,
             ],
             image: "",
-            movie: "",
+            movie: "https://www.youtube.com/embed/MKHDyRA0zAY",
         },
         {
             wide: "",
@@ -113,6 +134,29 @@ export const documents = {
             list: [
             ]
         },
-
+        {
+            title: "Health: 有酸素運動で脳を活性化",
+            text1: "4月から運動を毎日続けるためにダンスを独学で始めました.あくまでもメインは有酸素運動.",
+            text2: "結果：ほぼ毎日運動が続き,ダンスの成長が楽しい.",
+            listTitle: "",
+            list: [
+            ]
+        },
+        {
+            title: "Health: 水シャワー",
+            text1: "風邪予防のため始めた水シャワー2年近く続いています.最初は手足だけだったのですが,最近は頭から40秒間被れるようになりました.",
+            text2: "結果：風邪は年に1回くらい（もともと年5〜6回）",
+            listTitle: "",
+            list: [
+            ]
+        },
+        {
+            title: "Health: リーンゲインズ",
+            text1: "超お手軽プチ断食を2019年4月からしています.12時〜21時以外の時間は水しかのみません.",
+            text2: "結果：7kg痩せて,集中力UP",
+            listTitle: "",
+            list: [
+            ]
+        },
     ]
 }

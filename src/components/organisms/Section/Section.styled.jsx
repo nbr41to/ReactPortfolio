@@ -54,6 +54,7 @@ export const StyledComponent = styled.section`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 2rem;
     img, iframe {
       width: 80%;
       outline: 1px solid #ccc;
@@ -69,10 +70,16 @@ export const StyledComponent = styled.section`
     .section_inner {
       display: flex;
       flex-direction: row-reverse;
+      ${mq} {
+        flex-direction: column;
+      }
       .text_box, .view_box {
         justify-content: center;
         align-items: center;
         width: 50%;
+        ${mq} {
+          width: 100%;
+        }
       }
     }
     `

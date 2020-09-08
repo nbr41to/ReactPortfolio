@@ -29,9 +29,9 @@ export const about = {
         {
             wide: true,
             title: "今年の書き初め",
-            text1: "飛翔！",
-            text2: "これは今年の元旦にiPadで書いた書き初めです.",
-            discription: "これは今年の元旦にiPadで書いた書き初めです.",
+            text1: "新しい旅路での成長を誓い,書きました.",
+            text2: "今年一年は人生でもっとも成長する一年になりますように.",
+            discription: "元旦にiPadで書きました.",
             listTitle: "",
             list: [
             ],

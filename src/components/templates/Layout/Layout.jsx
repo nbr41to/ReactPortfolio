@@ -16,7 +16,7 @@ const Layout = ({ children }) => {
     <StyledComponent hamOpen={hamOpen}>
       <GlobalStyle />
       <Header hamOpen={hamOpen} setHamOpen={setHamOpen} />
-      <Left hamOpen={hamOpen} setHamOpen={setHamOpen} />
+      <Left />
       <Right />
       <Main children={children} />
       <Footer />
