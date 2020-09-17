@@ -39,7 +39,8 @@ export const business = {
             listTitle: "",
             list: [
                 "総合コンサルティング",
-                "アプリケーション開発",
+                "HTML/CSS/SassでのWebコーディング",
+                "Reactでの簡単なアプリケーション開発",
                 "心理コンサルティング",
                 "コーチング",
                 "カウンセリング",
