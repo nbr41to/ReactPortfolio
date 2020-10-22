@@ -8,6 +8,6 @@ export const GlobalStyle = createGlobalStyle`
     /* font-size:62.5%; */
     /* これで,デフォで10px */
     /* ならこれでよくね？ */
-    font-size:10px;
+    font-size: 10px;
   }
 `

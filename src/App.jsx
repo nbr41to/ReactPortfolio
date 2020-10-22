@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   BrowserRouter,
   HashRouter,
@@ -8,44 +8,50 @@ import {
   Redirect,
   Auth,
 } from 'react-router-dom';
+import ReactMarkdown from 'react-markdown'
+import markdown from './pages/about.md'
 import ScrollToTop from './ScrollToTop'
-import Layout from './components/Layout'
+import ContextProvider from "./Context"
+import Layout from './components/templates/Layout'
 import Home from './pages/Home';
 import About from './pages/About';
-import Work from './pages/Work';
+import Business from './pages/Business';
 import Contact from './pages/Contact';
+import Documents from './pages/Documents';
 import Mathematics from './pages/growth-record/Mathematics';
 import Programming from './pages/growth-record/Programming';
 import Psychology from './pages/growth-record/Psychology';
 import Cube from './pages/growth-record/Cube';
+import { GlobalStyle } from "./styles/GlobalStyle"
+
 
 export default function App() {
+  const [markdownText, setMarkdownText] = useState()
+  // console.log(markdownText);
+  useEffect(() => {
+    fetch(markdown).then((response) => response.text()).then((text) => {
+      setMarkdownText(text);
+    })
+  }, [])
   return (
-    <HashRouter>
+    <BrowserRouter>
+      <GlobalStyle />
       <ScrollToTop />
-      <Layout>
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/about" component={About} />
-          <Route exact path="/work" component={Work} />
-          <Route exact path="/contact" component={Contact} />
-          <Route exact path="/growth-record/math" component={Mathematics} />
+      <ContextProvider>
+        <Layout>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/about" render={() => <About markdownText={markdownText} />} />
+            <Route exact path="/Business" component={Business} />
+            <Route exact path="/contact" component={Contact} />
+            <Route exact path="/documents" component={Documents} />
+            {/* <Route exact path="/growth-record/math" component={Mathematics} />
           <Route exact path="/growth-record/prog" component={Programming} />
           <Route exact path="/growth-record/psyc" component={Psychology} />
-          <Route exact path="/growth-record/cube" component={Cube} />
-        </Switch>
-      </Layout>
-    </HashRouter>
+        <Route exact path="/growth-record/cube" component={Cube} /> */}
+          </Switch>
+        </Layout>
+      </ContextProvider>
+    </BrowserRouter>
   );
 }
-
-// 課題1
-// react-router-tabs
-// react-tabs
-// リンク先に切り替えたときに,
-// 再レンダリングが起こり,
-// タッチエフェクトが表示されない
-
-// 課題2
-// Layoutは各ページか,App.jsxか,
-

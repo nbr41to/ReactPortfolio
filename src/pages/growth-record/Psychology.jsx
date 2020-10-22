@@ -1,6 +1,5 @@
 import React from 'react';
-import { sections } from '../../contents'
-import Section from '../../components/Section'
+import Section from '../../components/organisms/Section'
 
 export default function Psychology() {
     return (

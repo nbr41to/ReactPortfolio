@@ -1,15 +1,15 @@
 import React from 'react';
-import Section from '../components/Section'
-import { sections } from '../contents'
+import Section from '../components/organisms/Section'
+import { home } from '../contents/home'
+import eyecatch from '../images/eyecatch.jpeg'
 
 export default function Home() {
     return (
         <div className="home">
             <div className="catch">
-                <h2>人生は何度でもやり直せる</h2>
-                <p>Reborn to Next Stage</p>
+                <img src={eyecatch} style={{ width: '100%' }} />
             </div>
-            {sections.home.map((section) => <Section section={section} />)}
+            {home.sections.map((section, index) => <Section section={section} key={index} />)}
         </div>
     );
 }
