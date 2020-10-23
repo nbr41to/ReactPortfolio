@@ -5,6 +5,9 @@ import {
     MailOutline,
     LaptopChromebook,
     MenuBook,
+    Code,
+    Star,
+    ViewModule,
 } from '@material-ui/icons';
 // iconはここでインポートしておくと使える
 
@@ -42,5 +45,20 @@ export const menu = [
         title: 'Docs',
         icon: <MenuBook className="icon" />,
         path: "documents",
+    },
+    {
+        title: 'Experiment',
+        icon: <Code className="icon" />,
+        path: "experoment",
+    },
+    {
+        title: 'Favorite',
+        icon: <Star className="icon" />,
+        path: "favorite",
+    },
+    {
+        title: 'Gallery',
+        icon: <ViewModule className="icon" />,
+        path: "gallery",
     },
 ]
