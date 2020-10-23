@@ -1,19 +1,18 @@
 import React, { useState } from "react"
 import { Link } from "react-router-dom"
 import { StyledComponent } from "./Header.styled"
-import lab_logo from "./lab_ttl_logo.png"
+import lab_logo from "./lab_title.png"
 import Menu from "../../Menu"
 import Burger from "../../Burger"
 
 const Header = ({ hamOpen, setHamOpen }) => {
   return (
     <StyledComponent className="header item">
-      {/* <h1>Knob's Portfolio</h1> */}
       <div className="logo_box">
+        <Burger open={hamOpen} setOpen={setHamOpen} />
         <Link to="/"><img src={lab_logo} alt="site_logo" /></Link>
       </div>
       <Menu row={true} />
-      <Burger open={hamOpen} setOpen={setHamOpen} />
     </StyledComponent>
   )
 }

@@ -11,9 +11,9 @@ export const StyledComponent = styled.div`
     display:grid;
     grid-template:
     "... ...... ...... ...... ...... ...... ..." 0
-    "... header header header header header ..." 10rem
+    "... header header header header header ..." auto
     "... ...... ...... ...... ...... ...... ..." 0
-    "... left   ...... main   main   main   ..." minmax(100vh, 1fr)
+    "... main   main   main   main   main   ..." minmax(100vh, 1fr)
     "... ...... ...... ...... ...... ...... ..." 0
     "... footer footer footer footer footer ..." 5rem
     "... ...... ...... ...... ...... ...... ..." 0 /
@@ -30,9 +30,23 @@ export const StyledComponent = styled.div`
     }
     .main {
       grid-area: main;
+      margin-top: 80px;
     }
     .left {
       grid-area: left;
+      width: 30%;
+      height: 100vh;
+      position: fixed;
+      top: 80px;
+      left: 0;
+      transform: ${({ hamOpen }) => hamOpen ? "translateX(0%)" : "translateX(-200%)"};
+      z-index: 10;
+      background-color: ${colors.orange};
+      opacity: 0.9;
+      transition: transform .3s;
+      ${mq} {
+        width: 60%;
+      }
     }
     .right {
       grid-area: right;
@@ -51,18 +65,5 @@ export const StyledComponent = styled.div`
       "footer footer footer footer footer" auto
       "...... ...... ...... ...... ......" 5rem /
         0      auto   0      auto   auto;
-
-      .left {
-        width: 80%;
-        position: fixed;
-        top: 0;
-        right: 0%;
-        transform: ${({ hamOpen }) => hamOpen ? "translateX(0%)" : "translateX(100%)"};
-        z-index: 5;
-        background-color: ${colors.blue};
-        border-bottom-left-radius: 1rem;
-        opacity: 0.9;
-        transition: transform .3s;
-      }
     }
   `;

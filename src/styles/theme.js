@@ -5,6 +5,7 @@ export const colors = {
     red: "#FCB7B2",
     blue: "#B1B2FB",
     green: "#CAF9B1",
+    navy: "",
 }
 
 export const smallMedia = "@media (max-width:760px)";

@@ -10,20 +10,24 @@ export const StyledComponent = styled.nav`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-right: 16px;
     h2 {
-      /* width: 100%; */
-      color: #444;
-      font-size:1.2rem;
-      text-align:center;
-      padding: 0.3rem;
+      display: none;
     }
     ul {
+      width: 320px;
+      background-color: white;
       display: flex;
-      justify-content: space-around;
+      justify-content: flex-start;
       align-items:flex-start;
+      overflow-x: auto;
+      white-space: nowrap;
+      padding: 12px;
+      box-shadow: 0px 0px 6px 1px #333 inset;
+      border-radius: 8px;
       li {
         width: 100%;
-        margin: 0 0.8rem;
+        padding: 0 8px;
       }
       a {
         display: flex;
@@ -34,6 +38,7 @@ export const StyledComponent = styled.nav`
         position: relative;
         .icon {
           font-size: 3.0rem;
+          /* color: white; */
           margin: 0.5rem;
         }
         span {
@@ -52,7 +57,7 @@ export const StyledComponent = styled.nav`
         }
       }
       .active {
-        color: ${colors.orange};
+        color: blue;
         filter: drop-shadow(1.5px 1.5px 0.5px rgba(0,0,0,0.6));
       }   
     }
@@ -63,8 +68,7 @@ export const StyledComponent = styled.nav`
   ${mq} {
     width: 100%;
     height: 5rem;
-    justify-content: center;
-    background-color: palegreen;
+    /* justify-content: center; */
     position: fixed;
     bottom: 0;
     left: 0;
@@ -73,29 +77,34 @@ export const StyledComponent = styled.nav`
       display: none;
     }
     ul {
+      background-color: navy;
       width: 100%;
       height: 100%;
-      justify-content: space-around;
+      justify-content: flex-start;
       align-items: center;
       padding: 0;
+      box-shadow: none;
+      border-radius: 0;
       li {
         height: 100%;
+        padding: 0 12px;
       }
       a {
         height: 100%;
         .icon {
           font-size: 3.0rem;
+          color: white;
         }
         &:hover {
-          color: ${colors.cream};
+          color: blue;
           span {
           display: none;
-        }
+          }
         }
       }
       .active {
         color: ${colors.cream};
-        background-color: green;
+        background-color: blue;
         font-weight: bold;
       }   
     }
@@ -131,13 +140,13 @@ export const StyledComponent = styled.nav`
             margin: 0 1rem;
           }
           &:hover {
-            color: ${colors.cream};
+            color: ${colors.blue};
             transition-duration:0.4s;
           }
         }
       }
       .active {
-        color: ${colors.cream};
+        color: blue;
         font-weight: bold;        
         filter: drop-shadow(1.5px 1.5px 0.5px rgba(0,0,0,0.6));
       }

@@ -2,14 +2,8 @@ import styled from 'styled-components';
 const mq = "@media (min-width:600px)";
 
 export const StyledBurger = styled.button`
-  ${mq} {
-    display: none;
-  }
+  margin: 0 16px;
   div {
-    position: Fixed;
-    top: 2.5rem;
-    right: 2rem;
-    z-index: 10;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -19,11 +13,10 @@ export const StyledBurger = styled.button`
     border: none;
     cursor: pointer;
     padding: 0;
-
     span {
       width: 3.0rem;
       height: 0.4rem;
-      background: #333;
+      background: #eee;
       border-radius: 10px;
       transition: all 0.3s linear;
       position: relative;
@@ -43,6 +36,7 @@ export const StyledBurger = styled.button`
       }
     }
   }
+  /* メニュークリックでメニューを閉じるやつ */
   .overlay {
     background-color: #000;
     opacity: 0;
