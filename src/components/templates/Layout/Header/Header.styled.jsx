@@ -3,15 +3,23 @@ import { colors } from "../../../../styles/theme"
 const mq = "@media (max-width:600px)";
 
 export const StyledComponent = styled.header`
+    width: 100%;
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:2rem;
-    background-color: ${colors.cream};
+    padding: 8px 0;
+    background-color: navy;
+    box-shadow: 0 5px 3px rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    z-index: 10;
     .logo_box {
+      display: flex;
+      align-items: center;
       img {
         width:auto;
-        height: 80px;
+        height: 60px;
       }
       h1 {
         font-size:6rem;
@@ -19,8 +27,6 @@ export const StyledComponent = styled.header`
       }
     }
     ${mq} {
-      background-color: lightgreen;
-      padding: 1rem;
       .logo_box {
         img {
           width:auto;
