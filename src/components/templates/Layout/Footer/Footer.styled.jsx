@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { colors } from "../../../../styles/theme"
 
+const mq = "@media (max-width:600px)";
 export const StyledComponent = styled.footer`
     display: flex;
     justify-content: center;
@@ -22,5 +23,8 @@ export const StyledComponent = styled.footer`
       svg {
         font-size: 2.2rem;
       }
+    }
+    ${mq} {
+      background-color: ${colors.blue};
     }
   `;

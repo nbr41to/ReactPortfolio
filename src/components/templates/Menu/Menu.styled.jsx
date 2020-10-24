@@ -20,11 +20,13 @@ export const StyledComponent = styled.nav`
       display: flex;
       justify-content: flex-start;
       align-items:flex-start;
-      overflow-x: auto;
-      white-space: nowrap;
       padding: 12px;
       box-shadow: 0px 0px 6px 1px #333 inset;
       border-radius: 8px;
+      /* 横スクロール */
+      overflow-x: auto;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
       li {
         width: 100%;
         padding: 0 8px;
@@ -77,7 +79,7 @@ export const StyledComponent = styled.nav`
       display: none;
     }
     ul {
-      background-color: navy;
+      background-color: ${colors.green};
       width: 100%;
       height: 100%;
       justify-content: flex-start;
@@ -96,7 +98,7 @@ export const StyledComponent = styled.nav`
           color: white;
         }
         &:hover {
-          color: blue;
+          color: ${colors.orange};
           span {
           display: none;
           }
@@ -104,8 +106,8 @@ export const StyledComponent = styled.nav`
       }
       .active {
         color: ${colors.cream};
-        background-color: blue;
-        font-weight: bold;
+        background-color: ${colors.blue};
+        filter: none;
       }   
     }
   }

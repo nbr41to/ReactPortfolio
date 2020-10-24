@@ -4,6 +4,7 @@ const mq = "@media (max-width:600px)";
 
 export const StyledComponent = styled.header`
     width: 100%;
+    max-width: 1500px;
     height: 80px;
     display: flex;
     justify-content: space-between;
@@ -27,6 +28,7 @@ export const StyledComponent = styled.header`
       }
     }
     ${mq} {
+      background-color: ${colors.green};
       .logo_box {
         img {
           width:auto;
