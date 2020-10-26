@@ -15,6 +15,7 @@ export const StyledComponent = styled.main`
         margin: 3rem;
       }
     .profile {
+      max-width: 320px;
       padding: 2rem;
       border: 1px solid #ccc;
       border-radius: 2rem;
@@ -26,7 +27,8 @@ export const StyledComponent = styled.main`
       }
       p {
           font-size: 1.6rem;
-          margin: 1rem;
+          margin: 0.5rem;
+          line-height: 2.8rem;
       }
     }
     /* MEDIA QUERY */

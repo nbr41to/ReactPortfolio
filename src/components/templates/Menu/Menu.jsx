@@ -1,11 +1,10 @@
-import React, { useContext, useEffect } from "react"
+import React, { useState, useEffect } from "react"
 import { Link, useLocation } from "react-router-dom"
 import { StyledComponent } from "./Menu.styled"
-import { menu } from '../../../contents/menu'
-import { Context } from '../../../Context'
+import { menu } from 'contents/menu'
 
 const Menu = ({ row }) => {
-  let [subtitle, setSubtitle] = useContext(Context)
+  let [subtitle, setSubtitle] = useState()
   const location = useLocation()
   const getH2tagsText = () => {
     const content = document.getElementById("content")
@@ -38,7 +37,7 @@ const Menu = ({ row }) => {
     subtitle = []
     setSubtitle(subtitle)
     getH2tagsText()
-    console.log(subtitle)
+    // console.log(subtitle)
   }, [location])
 
   return (
